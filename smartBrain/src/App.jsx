@@ -8,12 +8,14 @@ import './App.css';
 
 const App = () => {
   return (
-    <div>
+    <div className="min-h-screen relative">
       <ParticulesBG />
-      <Navigation />
-      <Logo />
-      <Rank />
-      <ImageLinkForm />
+      <div className="relative z-10">
+        <Navigation />
+        <Logo />
+        <Rank />
+        <ImageLinkForm />
+      </div>
     </div>
   );
 };
