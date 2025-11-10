@@ -5,11 +5,10 @@ import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
 import ParticulesBG from './components/ParticulesBG/ParticulesBG';
 import './App.css';
-import 'tailwindcss';
 
 const App = () => {
   return (
-    <div className="min-h-screen relative">
+    <div>
       <ParticulesBG />
       <Navigation />
       <Logo />
