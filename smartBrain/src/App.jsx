@@ -4,6 +4,7 @@ import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
 import ParticulesBG from './components/ParticulesBG/ParticulesBG';
+import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import './App.css';
 
 const returnClarifaiRequestOptions = (imageUrl) => {
@@ -111,12 +112,11 @@ class App extends Component {
             onInputChange={this.onInputChange}
             onButtonSubmit={this.onButtonSubmit}
           />
-          {/* <faceRecognition /> */}
+          <FaceRecognition imageUrl={this.state.imageUrl}/>
         </div>
       </div>
     );
   }
 }
-
 
 export default App;
